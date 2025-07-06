@@ -1,19 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const { 
-  getProjects, 
-  getProjectBySlug, 
-  createProject, 
-  updateProject, 
-  deleteProject 
+const {
+  getProjects,
+  getProjectBySlug,
+  createProject,
+  updateProject,
+  deleteProject
 } = require('../controllers/projectController');
 const { protect, admin } = require('../middleware/authMiddleware');
 
-// Rutas públicas
+
 router.get('/', getProjects);
 router.get('/:slug', getProjectBySlug);
 
-// Rutas protegidas (requieren autenticación)
+
 router.post('/', protect, createProject);
 router.put('/:id', protect, updateProject);
 router.delete('/:id', protect, admin, deleteProject); // Solo administradores pueden eliminar

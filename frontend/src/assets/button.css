@@ -1,0 +1,65 @@
+/* Botones base */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+}
+
+.btn-primary {
+    background-color: #61dafb;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #21a1f1;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #ff4d4f;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #d9363e;
+}
+
+/* Inputs */
+.input {
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #61dafb;
+}
+
+/* Label para inputs */
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Loader */
+.loader {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+}
